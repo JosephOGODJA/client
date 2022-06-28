@@ -1,20 +1,22 @@
 import './App.css';
-// import ListMatch from "./components/ListMatch";
+import ListMatch2 from "./components/ListMatch2";
 // import GridMatch from "./components/GridMatch";
-import Grid2 from "./components/Grid2";
+// import Grid from "./components/Grid";
+//import TeamNameAndLogo from "./components/TeamNameAndLogo";
 
 function App() {
   return (
     <div className="App">
       <div>
-        {/* <ListMatch /> */}
+        <ListMatch2 />
+        {/* <Grid /> */}
+        {/* <Grid2 />
         <Grid2 />
         <Grid2 />
         <Grid2 />
         <Grid2 />
-        <Grid2 />
-        <Grid2 />
-        <Grid2 />
+        <Grid2 /> */}
+        {/* <TeamNameAndLogo alt="Morocco flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png" /> */}
       </div>
     </div>
   );

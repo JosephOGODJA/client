@@ -105,27 +105,18 @@ export default function Grid2(props) {
             <Grid item container direction="row" justifyContent="space-evenly" alignItems="baseline" >
               <Grid item container sx={{ width: 128, height: 128 }} alignItems="center" justifyContent="space-between" >
                 <Grid items >
-                  <Item>
                     <TeamNameAndLogo /* alt={props.descA} */ src={props.logoA} name={props.teamA} />
-                  </Item>
                 </Grid>
               </Grid>
               <Grid xs={2} justifyContent="center" alignItems="center">
-                <Item>
-                  <UserInput />
-                </Item>
+                <UserInput />
               </Grid>
               <Grid xs={2} justifyContent="center" alignItems="center">
-                <Item>
-                  <UserInput />
-                </Item>
+                <UserInput />
               </Grid>
               <Grid item container sx={{ width: 128, height: 128 }} alignItems="center" justifyContent="space-between" >
                 <Grid items >
-                  <Item>
                     <TeamNameAndLogo /* alt={props.descB} */ src={props.logoB} name={props.teamB} />
-                {/* <TeamNameAndLogo alt="Morocco-flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flag_of_Morocco.svg/2560px-Flag_of_Morocco.svg.png" name="Morocco" /> */}
-                  </Item>
                 </Grid>
               </Grid>
             </Grid>

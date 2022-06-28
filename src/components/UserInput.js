@@ -1,30 +1,14 @@
-import React from 'react'
+import React from 'react';
+import TextField from '@mui/material/TextField';
 
-function UserInput(props) {
-  const handleSubmit= (e) => {
+
+export default function UserInput(props) {
+  /* const handleSubmit= (e) => {
     e.preventDefault();
     // ???
-  }
+  } */
 
   return (
-    <form onSubmit={e => {handleSubmit(e)}}>
-      <label> VS </label>
-      <br/>
-      <label>Name</label>
-      <br />
-      <input 
-        name='TeamA' 
-        type='number'
-        min='0'
-      />
-      <input 
-        name='TeamB' 
-        type='number'
-        min='0'
-      />
-      <br/>
-    </form>
+    <TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} sx={{ width: 56, height: 56 }}  />
   )
 }
-
-export default UserInput;
