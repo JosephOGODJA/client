@@ -1,6 +1,6 @@
 import React from 'react';
-import TeamNameAndLogo from "./TeamNameAndLogo";
-import UserInput from "./UserInput";
+import TeamNameAndLogo from "../TeamNameAndLogo";
+import UserInput from "../UserInput";
 
 const divStyle = {
     display: 'inline-block',

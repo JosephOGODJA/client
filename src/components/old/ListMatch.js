@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import axios from "axios";
-// import Match from "./Match";
-import Grid3 from "./Grid3";
+import Match from "./Match";
+import Grid2 from "./Grid2";
 
-function ListMatch2(params) {
+function ListMatch(params) {
   const [games, setGames] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ function ListMatch2(params) {
     <div className="App">
       <div>
         {
-          games.map(game => <Grid3 logoA={game.logoA} teamA={game.teamA} logoB={game.logoB} teamB={game.teamB} />)
+          games.map(game => <Match logoA={game.logoA} teamA={game.teamA} logoB={game.logoB} teamB={game.teamB} />)
         }
       </div>
     </div>
@@ -27,4 +27,4 @@ function ListMatch2(params) {
 }
 
 
-export default ListMatch2;
+export default ListMatch;

@@ -9,6 +9,6 @@ export default function UserInput(props) {
   } */
 
   return (
-    <TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} sx={{ width: 56, height: 56 }}  />
+    <TextField inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }} sx={{ width: 56, height: 56 }} onInputCapture />
   )
 }

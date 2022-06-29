@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import TeamNameAndLogo from "./TeamNameAndLogo";
-import UserInput from "./UserInput";
+import TeamNameAndLogo from "../TeamNameAndLogo";
+import UserInput from "../UserInput";
 // import { sizing } from '@mui/system';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -101,22 +101,29 @@ export default function Grid2(props) {
             <FormRow1 />
           </Grid>
           <Grid container spacing={5} justifyContent="center" alignItems="center" item xs={8} sm={12}>
-            {/* <FormRow2 /> */}
             <Grid item container direction="row" justifyContent="space-evenly" alignItems="baseline" >
               <Grid item container sx={{ width: 128, height: 128 }} alignItems="center" justifyContent="space-between" >
                 <Grid items >
-                    <TeamNameAndLogo /* alt={props.descA} */ src={props.logoA} name={props.teamA} />
+                  <Item>
+                    <TeamNameAndLogo src={props.logoA} name={props.teamA} />
+                  </Item>
                 </Grid>
               </Grid>
               <Grid xs={2} justifyContent="center" alignItems="center">
-                <UserInput />
+                <Item>
+                  <UserInput />
+                </Item>
               </Grid>
               <Grid xs={2} justifyContent="center" alignItems="center">
-                <UserInput />
+                <Item>
+                  <UserInput />
+                </Item>
               </Grid>
               <Grid item container sx={{ width: 128, height: 128 }} alignItems="center" justifyContent="space-between" >
                 <Grid items >
-                    <TeamNameAndLogo /* alt={props.descB} */ src={props.logoB} name={props.teamB} />
+                  <Item>
+                    <TeamNameAndLogo src={props.logoB} name={props.teamB} />
+                  </Item>
                 </Grid>
               </Grid>
             </Grid>

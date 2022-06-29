@@ -4,8 +4,8 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import TeamNameAndLogo from "./TeamNameAndLogo";
-import UserInput from "./UserInput";
+import TeamNameAndLogo from "../TeamNameAndLogo";
+import UserInput from "../UserInput";
 // import { sizing } from '@mui/system';
 
 const Item = styled(Paper)(({ theme }) => ({
